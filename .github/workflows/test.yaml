@@ -16,5 +16,6 @@ jobs:
       - name: Send signal
         run: |
           docker ps -a
+          docker logs node
           docker kill -s SIGTERM node
           docker-compose down
