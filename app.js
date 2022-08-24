@@ -16,3 +16,8 @@ function handle(signal) {
 
 process.on('SIGINT', handle);
 process.on('SIGTERM', handle);
+
+setTimeout(() => {
+    console.log('Done…')
+    process.exit(0)
+}, 30000)
