@@ -17,5 +17,5 @@ jobs:
         run: |
           docker ps -a
           docker kill -s SIGTERM node
-          docker-compose down
           docker logs node
+          docker-compose down
